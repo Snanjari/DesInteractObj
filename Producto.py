@@ -1,8 +1,9 @@
-#producto.py
+# producto.py
 class Producto:
     """
     Clase que representa un producto en una tienda.
     """
+
     def __init__(self, nombre: str, precio: int, stock: int = 0):
         """
         Inicializa un producto con su nombre, precio y stock.
