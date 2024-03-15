@@ -1,12 +1,11 @@
+# tienda.py
 from abc import ABC, abstractmethod
 from producto import Producto
-
 
 class Tienda(ABC):
     """
     Clase que representa una tienda genérica.
     """
-
     def __init__(self, nombre: str, delivery: int):
         """
         Inicializa una tienda con su nombre y costo de delivery.
@@ -49,7 +48,6 @@ class Tienda(ABC):
         """list: Lista de productos de la tienda."""
         return self.__productos
 
-
 class Restaurante(Tienda):
     """Clase que representa un restaurante."""
 
@@ -77,7 +75,6 @@ class Restaurante(Tienda):
     def realizar_venta(self, nombre: str, cantidad: int):
         """Realiza una venta en el restaurante."""
         pass
-
 
 class Supermercado(Tienda):
     """Clase que representa un supermercado."""
@@ -117,7 +114,6 @@ class Supermercado(Tienda):
                 self.productos[indice].stock = 0
             else:
                 self.productos[indice].stock -= cantidad
-
 
 class Farmacia(Tienda):
     """Clase que representa una farmacia."""
