@@ -1,4 +1,6 @@
 from tienda import Restaurante, Farmacia, Supermercado
+from producto import Producto
+
 
 def ingresar_datos_tienda():
     """
